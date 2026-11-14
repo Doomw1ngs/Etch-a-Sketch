@@ -1,5 +1,10 @@
 "use strict";
 const container = document.querySelector(".container");
-const divOne = document.createElement("div");
-const divTwo = document.createElement("div");
-const divThree = document.createElement("div");
+
+for (let i = 0; i < 16; i++) {
+  for (let j = 0; j < 16; j++) {
+    const divElement = document.createElement("div");
+    divElement.classList.add("grid-square");
+    container.appendChild(divElement);
+  }
+}
